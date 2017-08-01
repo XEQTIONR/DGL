@@ -1,7 +1,15 @@
 @primary : #6E82FC;
 
+.white-text{
+  color: white;
+}
+
+.gray-text{
+  color: #DDF;
+}
 body
 {
+
   //GENERAL
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
@@ -10,11 +18,12 @@ body
 	//SECTIONS
   #header{
     height: 80px;
+    margin-bottom: 0;
     background-color: @primary ;
-		border-color: transaprent;
-
+    border: 0;
     .navbar-header{
       margin-top: 2em;
+
       button{
         border-color: white;
         span{
@@ -46,14 +55,20 @@ body
         padding-top: 1em;
         a{
           text-transform: uppercase;
-          color: #FFF;
-          font-size: 1.4em;
+          font-size: 1.6em;
 					font-weight: bolder;
+
+          .gray-text;
+
+          &:hover{
+            .white-text;
+            background-color: @primary;
+          }
         }
       }
 			.navbar-collapse{
 				//border: 0px solid tansparent;
-				border-color: Ttransparent !important;
+				border-color: transparent !important;
 				background-color: @primary;
 				margin-top: 5px;
 			}
@@ -63,6 +78,7 @@ body
 					a{
 						font-size: 1.2em;
 						font-weight: normal;
+            .white-text;
 					}
 				}
 			}
@@ -86,9 +102,17 @@ body
 
 
 
-  content
+  .content
   {
+    margin: 0;
+    background-color: @primary;
+    height: 100vh;
+    width: 100vw;
 
+    h1{
+      .white-text;
+      font-weight: bolder;
+    }
   }
 
   footer
