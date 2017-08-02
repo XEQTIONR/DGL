@@ -109,15 +109,25 @@ $(document).ready(function(){
 });
 
 </script>
+<script>
+$(document).ready(function(){
+  $("#mission").hide();
+  $(".learn").css("cursor", "pointer");
+
+  $(".learn").click(function(){
+    $("#mission").show();
+    $("#banner").slideUp();
+
+  });
+
+});
+</script>
 @endsection
 @section('content')
 
-<div class="container" style="height: 100vh;">
+<div id="banner" class="container" style="height: 100vh;">
 
-{{--<div class="row">
-  <img class="center-block" src="./img/mario.png" width="500">
-</div>--}}
-<div class="row" style="margin-top: 40vh">
+<div class="row" style="margin-top: 50vh">
 
 
 </div>
@@ -135,8 +145,8 @@ $(document).ready(function(){
 
 
 <div class="footer navbar-fixed-bottom">
-  <h4 class="text-center white-text text-uppercase">Learn More </h4>
-  <h5 class="text-center"><span class="glyphicon glyphicon-chevron-down  white-text" aria-hidden="true"></h5>
+  <h4 class="learn text-center white-text text-uppercase">Learn More </h4>
+  <h5 class="learn text-center"><span class="glyphicon glyphicon-chevron-down  white-text" aria-hidden="true"></h5>
 </div>
 
 
