@@ -43,18 +43,18 @@ $(document).ready(function(){
   });
 
   $(".img").position({
-    "my": "center middle",
+    "my": "center bottom",
     "at": "center middle",
     "of": $("#wrapper")
   });
 
   function nem8(){
-    $(this).animate({opacity:0},2000);
+    $(this).animate({opacity:0},1500);
   }
 
 
   function nem10(){
-    $(this).animate({opacity:1},2000);
+    $(this).animate({opacity:1},1500);
   }
 
   var i = 2;
@@ -70,7 +70,7 @@ $(document).ready(function(){
     //$(elem).animate({opacity:1});
     //$(elem).css("border", "1px solid green");
     $(elem).position({
-      "my": "center middle",
+      "my": "center bottom",
       "at": "center middle",
       "of": window,
       "using": nem10,
@@ -100,7 +100,7 @@ $(document).ready(function(){
     //$(left).delay(500).animate({opacity:0},500, function(){loop()});
     setTimeout(function() {
       loop();
-    }, 7000);
+    }, 4000);
   }
   $("#prev").click(function(){
     loop();
@@ -112,12 +112,12 @@ $(document).ready(function(){
 @endsection
 @section('content')
 
-<div class="container">
+<div class="container" style="height: 100vh;">
 
 {{--<div class="row">
   <img class="center-block" src="./img/mario.png" width="500">
 </div>--}}
-<div class="row" style="margin-top: 55vh">
+<div class="row" style="margin-top: 40vh">
 
 
 </div>
@@ -138,15 +138,16 @@ $(document).ready(function(){
   <h4 class="text-center white-text text-uppercase">Learn More </h4>
   <h5 class="text-center"><span class="glyphicon glyphicon-chevron-down  white-text" aria-hidden="true"></h5>
 </div>
-</div>
+
 
 <div id="wrapper">
   <img class="img" id="a0" src="./img/dacrown-sm-a.png" width ="100">
-  <img class="img" id="a1" src="./img/icons8-Joystick.png" width ="100">
-  <img class="img" id="a2" src="./img/icons8-Nintendo Without Card.png" width ="100">
+  <img class="img" id="a1" src="./img/icons8-Joystick.png" width ="100" style="opacity: 0;">
+  <img class="img" id="a2" src="./img/icons8-Nintendo Without Card.png" width ="100" style="opacity: 0;">
+</div>
 <div id="container"></div>
 </div>
 
-
+@include('partials.mission')
 
 @endsection
