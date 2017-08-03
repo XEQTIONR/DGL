@@ -112,10 +112,12 @@ $(document).ready(function(){
 <script>
 $(document).ready(function(){
   $("#mission").hide();
+  $("#footer").hide();
   $(".learn").css("cursor", "pointer");
 
   $(".learn").click(function(){
     $("#mission").show();
+    $("#footer").show();
     $("#banner").slideUp();
 
   });
@@ -139,7 +141,7 @@ $(document).ready(function(){
 
 </div>
 <div class="row">
-  <h3 class="text-center gray-text">Pro e-sport tournaments. Online Registrations.<h3>
+  <h3 class="text-center gray-text">Site currently under construction. Not all features may work.<h3>
 </div>
 
 
@@ -159,5 +161,7 @@ $(document).ready(function(){
 </div>
 
 @include('partials.mission')
+
+@include('partials.footer')
 
 @endsection

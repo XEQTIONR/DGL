@@ -2,7 +2,7 @@
 
 @light-gray : #EDEFF5;
 
-@dark-gray: #DEE0E5;
+@dark-gray: #30333D;
 
 .white-text{
   color: white;
@@ -148,9 +148,29 @@ body
     }
   }
 
-  footer
+  #footer
   {
+    background-color: desaturate(darken(@primary, 5%), 10%);/* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, @primary, desaturate(darken(@primary, 5%), 10%)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, @primary, desaturate(darken(@primary, 5%), 10%)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, @primary, desaturate(darken(@primary, 5%), 10%)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, @primary, desaturate(darken(@primary, 5%), 10%)); /* Standard syntax */
 
+    p{
+      color: white;
+      margin-top: 3em;
+      margin-bottom: 3em;
+      font-size: 1.7em;
+      font-weight: 600;
+    }
+
+    h5{
+      color: white;
+      margin-top: 3em;
+      margin-bottom: 3em;
+      font-size: 1.7em;
+      //font-weight: 600;
+    }
   }
 
   .icon{
