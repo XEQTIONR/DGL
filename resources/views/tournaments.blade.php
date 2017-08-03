@@ -105,7 +105,7 @@
           </div>
 
           @include('partials.blog_entry', ['title' =>"The title of the sombra tournament",
-                                            'desc'=>"Some kind of description about the sombra tournament.",
+                                            'desc'=>"Some kind of description about the sombra tournament. Let me put a larger description, so that we may observe some text wrapping.",
                                             'img' =>"img/tracer.png"])
 
         </div>

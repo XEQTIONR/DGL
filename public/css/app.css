@@ -135,6 +135,14 @@ body .blog-entry h4 {
 body .blog-entry p {
   font-size: 1.5em;
 }
+body .btn-dgl {
+  background-color: #5C72C4;
+  color: #FFF;
+}
+body .btn-dgl:hover {
+  background-color: #e69500;
+  color: #FFF;
+}
 body .card {
   display: block;
   margin: 1em 0;
