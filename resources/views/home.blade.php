@@ -108,6 +108,26 @@ $(document).ready(function(){
   loop();
 });
 
+$(window).on("resize", function(){
+  $("#wrapper").position({
+    "my": "center middle",
+    "at": "center middle",
+    "of": window
+  });
+
+  $("#container").position({
+    "my": "center middle",
+    "at": "center middle",
+    "of": window
+  });
+
+  $(".img").position({
+    "my": "center bottom",
+    "at": "center middle",
+    "of": $("#wrapper")
+  });
+});
+
 </script>
 <script>
 $(document).ready(function(){
