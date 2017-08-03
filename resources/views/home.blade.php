@@ -181,7 +181,6 @@ $(document).ready(function(){
 </div>
 
 @include('partials.mission')
-<a href="https://icons8.com">Icon pack by Icons8</a>
 @include('partials.footer')
 
 @endsection

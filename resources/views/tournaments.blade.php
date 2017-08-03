@@ -14,8 +14,9 @@
 @endsection
 @section('content')
 
+
 <div class="container">
-  <div class="row" style="margin-top: 75pxs;">
+  <div class="row">
   <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
@@ -57,9 +58,60 @@
     </a>
   </div>
   </div>
-
-  <div class="row">
-    <h1> can you see me</h1>
-  </div>
 </div>
+<div class="light-background" style="width: 100%; margin-top: 1em;">
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-9"> {{--tournament info--}}
+      <div class="row"> {{--current-tournaments--}}
+        <div class="col-md-12">
+          <div class="row">
+            <h3><strong>CURRENT TOURNAMENT</strong></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row"><hr></div>
+
+      <div class="row">{{--upcoming-tournaments--}}
+        <div class="col-md-12">
+          <div class="row">
+            <h3><strong>UPCOMING TOURNAMENTS</strong></h3>
+          </div>
+        </div>
+      </div>
+
+      <div class="row"><hr></div>
+
+      <div class="row">{{--past-tournaments--}}
+        <div class="col-md-12">
+          <div class="row">
+            <h3><strong>PAST TOURNAMENT</strong></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3"> {{--side-bar--}}
+      <div class="row"> {{--scoreboard--}}
+        <div class="card" id="scoreboard">
+        </div>
+      </div>
+
+      <div class="row"> {{--results--}}
+        <div class="card" id="results">
+        </div>
+      </div>
+      <div class="row"> {{--fixtures--}}
+        <div class="card" id="fixtures">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+@include('partials.footer')
 @endsection

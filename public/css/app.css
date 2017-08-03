@@ -71,7 +71,6 @@ body .content {
   z-index: 3;
   margin: 0;
   background-color: #5C72C4;
-  height: 100vh;
   width: 100vw;
 }
 body .content h1 {
@@ -122,4 +121,25 @@ body .icon {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+body .card {
+  display: block;
+  margin: 1em 0;
+  padding: 5px;
+  height: 300px;
+  background-color: orange;
+}
+body .card .title {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+body .card .title img {
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .light-background {
+  background-color: #EDEFF5;
 }

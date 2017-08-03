@@ -9,7 +9,7 @@
     </button>
 
 
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img alt="Brand" src="img/core-alternate-transparent.png" height="45">
     </a>
   </div>
@@ -17,7 +17,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav navbar-left">
       <li><a href="#">news</a></li>
-      <li><a href="#">tournaments</a></li>
+      <li><a href="/tournaments">tournaments</a></li>
       <li><a href="#">Teams</a></li>
       <li><a href="#">Media</a></li>
       <li><a href="#">About</a></li>
