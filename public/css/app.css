@@ -122,6 +122,19 @@ body .icon {
   margin-left: auto;
   margin-right: auto;
 }
+body .blog-entry {
+  margin: 1.6em auto;
+}
+body .blog-entry img {
+  width: 100%;
+  margin-left: -5%;
+}
+body .blog-entry h4 {
+  font-weight: bolder;
+}
+body .blog-entry p {
+  font-size: 1.5em;
+}
 body .card {
   display: block;
   margin: 1em 0;
