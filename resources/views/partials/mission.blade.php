@@ -1,6 +1,6 @@
-<div id="mission">
-<div id="j2" class="jumbotron">
-<div class="container">
+<div id="mission" style="margin-top: 50px;">
+<div id="j2" class="jumbotron" style="height: 100vh;">
+<div class="container" style="margin-top: 10vh;">
   <div class="row">
     <h1 class="text-center">Who we are</h1>
   </div>

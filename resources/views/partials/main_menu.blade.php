@@ -10,7 +10,7 @@
 
 
     <a class="navbar-brand" href="#">
-      <img alt="Brand" src="img/site-1-a.png" height="80">
+      <img alt="Brand" src="img/core-alternate-transparent.png" height="45">
     </a>
   </div>
 

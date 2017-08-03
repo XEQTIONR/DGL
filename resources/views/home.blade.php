@@ -151,7 +151,7 @@ $(document).ready(function(){
 
 
 <div id="wrapper">
-  <img class="img" id="a0" src="./img/dacrown-sm-a.png" width ="100">
+  <img class="img" id="a0" src="./img/dacrown-md-a.png" width ="100">
   <img class="img" id="a1" src="./img/icons8-Joystick.png" width ="100" style="opacity: 0;">
   <img class="img" id="a2" src="./img/icons8-Nintendo Without Card.png" width ="100" style="opacity: 0;">
 </div>
