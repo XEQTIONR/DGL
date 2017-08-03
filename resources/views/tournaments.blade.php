@@ -115,11 +115,84 @@
     <div class="col-md-3"> {{--side-bar--}}
       <div class="row"> {{--scoreboard--}}
         <div class="card" id="scoreboard">
+          <h4 class="title text-center">SCOREBOARD</h4>
+          <h5 class="tournament-name text-center">DGL Faceoff 5</h5>
+
+          <table class="table table-condensed">
+            <thead>
+              <tr>
+                <th>Pos.</th>
+                <th>Team</th>
+                <th>Played</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>1</th>
+                <th>DtM</th>
+                <th>5</th>
+                <th>15</th>
+              </tr>
+              <tr>
+                <th>2</th>
+                <th>SP</th>
+                <th>5</th>
+                <th>11</th>
+              </tr>
+              <tr>
+                <th>3</th>
+                <th>XL</th>
+                <th>4</th>
+                <th>10</th>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <div class="row">
+            <div class="full-button">
+            <a class="btn btn-dgl btn-xs" href="#">Full table</a>
+            </div>
+          </div>
         </div>
       </div>
 
       <div class="row"> {{--results--}}
         <div class="card" id="results">
+            <h4 class="title text-center">RESULTS</h4>
+            <h5 class="tournament-name text-center">DGL Faceoff 5</h5>
+
+            <table class="table table-condensed">
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <th>DtM</th>
+                  <th>5</th>
+                  <th>15</th>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <th>SP</th>
+                  <th>5</th>
+                  <th>11</th>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <th>XL</th>
+                  <th>4</th>
+                  <th>10</th>
+                </tr>
+
+              </tbody>
+            </table>
+
+            <div class="row">
+              <div class="full-button">
+              <a class="btn btn-dgl btn-xs" href="#">Full table</a>
+              </div>
+            </div>
+
         </div>
       </div>
       <div class="row"> {{--fixtures--}}

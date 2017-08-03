@@ -147,19 +147,28 @@ body .card {
   display: block;
   margin: 1em 0;
   padding: 5px;
-  height: 300px;
-  background-color: orange;
+  border: 5px solid #5C72C4;
+  background-color: #eeeef0;
 }
 body .card .title {
   margin-top: 1em;
   margin-bottom: 1em;
   display: block;
 }
-body .card .title img {
+body .card img {
   width: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+body .card .full-button a {
+  display: block;
+  margin: 1em auto;
+  width: 90%;
+}
+body .card table thead tr {
+  background-color: #5C72C4;
+  color: white;
 }
 body .light-background {
   background-color: #EDEFF5;

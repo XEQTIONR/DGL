@@ -3,6 +3,7 @@
 @light-gray : #EDEFF5;
 
 @dark-gray: #30333D;
+@almost-black : #202126;
 
 .white-text{
   color: white;
@@ -208,19 +209,24 @@ body
     color: #FFF;
   }
 }
+
+//SIDE CARDS
 .card{
   display: block;
   //width : 100%;
   margin: 1em 0;
   padding: 5px;
-  height: 300px;
-  background-color: orange;
+  //height: 300px;
+  border: 5px solid @primary;
+  background-color: lighten(@almost-black, 80%);
   //border: 1px dashed green;
 
   .title{
     margin-top: 1em;
     margin-bottom: 1em;
     display: block;
+  }
+
 
     img{
       width: 25%;
@@ -228,8 +234,25 @@ body
       margin-left: auto;
       margin-right: auto;
     }
+
+    .full-button
+    {
+    a{
+      display: block;
+      margin: 1em auto;
+      width: 90%;
+    }
   }
 
+  table{
+    thead{
+
+    tr{
+      background-color: @primary;
+      color: white;
+    }
+    }
+  }
 
 }
 
