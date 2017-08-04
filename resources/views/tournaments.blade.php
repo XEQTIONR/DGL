@@ -63,7 +63,7 @@
 <div class="container">
   <div class="row">
 
-    <div class="col-md-9"> {{--tournament info--}}
+    <div class="col-md-8"> {{--tournament info--}}
       <div class="row"> {{--current-tournaments--}}
         <div class="col-md-12">
           <div class="row">
@@ -112,7 +112,7 @@
       </div>
     </div>
 
-    <div class="col-md-3"> {{--side-bar--}}
+    <div class="col-md-3 col-md-offset-1"> {{--side-bar--}}
       <div class="row"> {{--scoreboard--}}
         <div class="card" id="scoreboard">
           <h4 class="title text-center">SCOREBOARD</h4>

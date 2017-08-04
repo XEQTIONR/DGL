@@ -1,4 +1,4 @@
-@primary : #5C72C4;
+@primary : #67c;
 
 @light-gray : #EDEFF5;
 
@@ -20,12 +20,20 @@ body
   font-weight: 400;
   font-size: 10px;
 
+  p{
+    font-size: 2em;
+  }
+  hr{
+    border-color: @primary;
+  }
+
 	//SECTIONS
   #header{
     height: 80px;
     margin-bottom: 0;
     background-color: @primary ;
     border: 0;
+
     .navbar-header{
       margin-top: 2em;
 
@@ -33,11 +41,8 @@ body
         border-color: white;
         span{
           background-color: white;
-					//color: white;
         }
       }
-
-
 
       a{
 
@@ -113,6 +118,7 @@ body
 
 
 
+
   .content
   {
     z-index: 3;
@@ -174,6 +180,8 @@ body
     }
   }
 
+
+
   .icon{
   display: block;
   margin-left: auto;
@@ -228,20 +236,26 @@ body
   }
 
 
-    img{
-      width: 25%;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
+  img{
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    .full-button
-    {
+  .full-button
+  {
     a{
       display: block;
       margin: 1em auto;
       width: 90%;
     }
+  }
+
+  ul{
+    margin-top: 1em;
+    font-size: 2em;
+    font-weight: bolder;
   }
 
   table{
@@ -256,11 +270,29 @@ body
 
 }
 
+.nav-dgl{ //for tournament
+
+  li{
+    a{
+        font-size: 1.6em;
+    }
+
+  }
+}
+
+.p-heading{
+
+  h1, h2, h3, h4, h5, h6{
+    color: white;
+    background-color: @primary;
+    padding : 10px;
+    margin-top: 10px;
+  }
+}
+
 .light-background{
   background-color: @light-gray;
 }
-
-
 
 
 } //body

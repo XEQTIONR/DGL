@@ -18,3 +18,7 @@ Route::get('/', function () {
 Route::get('/tournaments', function () {
     return view('tournaments');
 });
+
+Route::get('/test', function () {
+    return view('profiles.tournament');
+});
