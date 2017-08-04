@@ -27,6 +27,12 @@ body #dropDown a {
   text-decoration: none;
   padding: 0 1em 1em 1em;
 }
+body table {
+  font-size: 1.5em;
+}
+body table tr td {
+  margin: 20px 0;
+}
 body #header {
   height: 80px;
   margin-bottom: 0;
@@ -93,6 +99,10 @@ body .content {
 }
 body .content h1 {
   color: white;
+  font-weight: bolder;
+}
+body .content h2 {
+  color: #67c;
   font-weight: bolder;
 }
 body .content .jumbotron {
@@ -166,7 +176,7 @@ body .card {
   margin: 1em 0;
   padding: 5px;
   border: 5px solid #67c;
-  background-color: #eeeef0;
+  background-color: #EDEFF5;
 }
 body .card .title {
   margin-top: 1em;
@@ -209,4 +219,7 @@ body .p-heading h6 {
 }
 body .light-background {
   background-color: #EDEFF5;
+}
+body .white-background {
+  background-color: white;
 }

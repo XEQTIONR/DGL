@@ -23,6 +23,14 @@ Route::get('/matches', function () {
     return view('matches');
 });
 
+Route::get('/media', function () {
+    return view('media');
+});
+
+Route::get('/teams', function () {
+    return view('teams');
+});
+
 Route::get('/test', function () {
     return view('profiles.tournament');
 });

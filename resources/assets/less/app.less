@@ -40,6 +40,17 @@ body
       padding: 0 1em 1em 1em;
     }
   }
+
+  table{
+
+    font-size: 1.5em;
+
+    tr{
+      td{
+      margin: 20px 0;
+    }
+    }
+  }
 	//SECTIONS
   #header{
     height: 80px;
@@ -145,6 +156,11 @@ body
       font-weight: bolder;
     }
 
+    h2{
+      color: @primary;
+      font-weight: bolder;
+    }
+
     .jumbotron{
       margin-bottom: 0;
       background-color: @light-gray;
@@ -239,7 +255,7 @@ body
   padding: 5px;
   //height: 300px;
   border: 5px solid @primary;
-  background-color: lighten(@almost-black, 80%);
+  background-color: @light-gray;//lighten(@almost-black, 80%);
   //border: 1px dashed green;
 
   .title{
@@ -272,11 +288,13 @@ body
   }
 
   table{
+
     thead{
 
     tr{
       background-color: @primary;
       color: white;
+
     }
     }
   }
@@ -305,6 +323,10 @@ body
 
 .light-background{
   background-color: @light-gray;
+}
+
+.white-background{
+  background-color: white;
 }
 
 

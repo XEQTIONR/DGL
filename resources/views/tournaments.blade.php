@@ -59,7 +59,7 @@
   </div>
   </div>
 </div>
-<div class="light-background" style="width: 100%; margin-top: 1em;">
+<div class="white-background" style="width: 100%; margin-top: 1em;">
 <div class="container">
   <div class="row">
 
