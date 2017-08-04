@@ -26,7 +26,20 @@ body
   hr{
     border-color: @primary;
   }
+  #dropDown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: darken(@light-gray, 30%);
+    //min-width: 12em;
+    min-width: 100px;
 
+    a{
+      display: block;
+      text-decoration: none;
+      padding: 0 1em 1em 1em;
+    }
+  }
 	//SECTIONS
   #header{
     height: 80px;

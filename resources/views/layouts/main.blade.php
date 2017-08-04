@@ -26,7 +26,22 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+<script>
+  $(document).ready(function(){
+    $("#s-about").hover(function(){
+      $("#dropDown").fadeIn(500);
+    }, function(){
 
+      $("#dropDown").hover(function(){
+        $(this).show();
+      }, function(){
+        $(this).hide();
+      });
+
+      $("#dropDown").hide();
+    });
+  });
+</script>
 @yield('style')
 <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>

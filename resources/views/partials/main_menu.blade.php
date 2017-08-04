@@ -18,9 +18,17 @@
     <ul class="nav navbar-nav navbar-left">
       <li><a href="#">news</a></li>
       <li><a href="/tournaments">tournaments</a></li>
-      <li><a href="#">Teams</a></li>
-      <li><a href="#">Media</a></li>
-      <li><a href="#">About</a></li>
+      <li><a href="#">matches</a></li>
+      <li><a href="#">Goodies</a></li>
+      <li><a href="#" id="s-about">About</a>
+        <div id="dropDown">
+          <ul class="list-unstyled">
+            <li><a href="dglcore.com/about">DGL</a></li>
+            <li><a href="dglcore.com/dateam">DATEAM</a></li>
+          </ul>
+        </div>
+      </li>
+
       {{--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>--}}
     </ul>
 
