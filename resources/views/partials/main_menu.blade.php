@@ -18,7 +18,7 @@
     <ul class="nav navbar-nav navbar-left">
       <li><a href="#">news</a></li>
       <li><a href="/tournaments">tournaments</a></li>
-      <li><a href="#">matches</a></li>
+      <li><a href="/matches">matches</a></li>
       <li><a href="#">Goodies</a></li>
       <li><a href="#" id="s-about">About</a>
         <div id="dropDown">

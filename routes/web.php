@@ -19,6 +19,10 @@ Route::get('/tournaments', function () {
     return view('tournaments');
 });
 
+Route::get('/matches', function () {
+    return view('matches');
+});
+
 Route::get('/test', function () {
     return view('profiles.tournament');
 });
