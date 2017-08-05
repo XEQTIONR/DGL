@@ -10,43 +10,58 @@
   }
 
   #container{
-    /*border: 1px solid red;*/
+    border: 1px solid red;
     position: relative;
+
     width: 500px;
-    height: 75px;
+    height: 100px;
     /*top: 30vh;
     left: 50vw;*/
   }
 
   #wrapper{
-    /*border: 1px solid blue;*/
+    border: 1px solid blue;
     position: relative;
     width: 700px;
   }
+
 </style>
 
 <script>
 
+function positioning(){
+$("#wrapper").position({
+  "my": "center middle",
+  "at": "center middle",
+  "of": window
+});
+
+$("#container").position({
+  "my": "center middle",
+  "at": "center middle",
+  "of": window
+});
+
+$(".img").position({
+  "my": "center bottom",
+  "at": "center middle",
+  "of": $("#wrapper")
+});
+}
+
 $(document).ready(function(){
 
+  $("#mission").hide();
+  $("#footer").hide();
+  $(".learn").css("cursor", "pointer");
 
-  $("#wrapper").position({
-    "my": "center middle",
-    "at": "center middle",
-    "of": window
+  $(".learn").click(function(){
+    $("#mission").show();
+    $("#footer").show();
+    $("#banner").slideUp();
+
   });
 
-  $("#container").position({
-    "my": "center middle",
-    "at": "center middle",
-    "of": window
-  });
-
-  $(".img").position({
-    "my": "center bottom",
-    "at": "center middle",
-    "of": $("#wrapper")
-  });
 
   function nem8(){
     $(this).animate({opacity:0},1500);
@@ -102,48 +117,17 @@ $(document).ready(function(){
       loop();
     }, 4000);
   }
-  $("#prev").click(function(){
-    loop();
-  });
+
+  positioning();
   loop();
 });
 
 $(window).on("resize", function(){
-  $("#wrapper").position({
-    "my": "center middle",
-    "at": "center middle",
-    "of": window
-  });
-
-  $("#container").position({
-    "my": "center middle",
-    "at": "center middle",
-    "of": window
-  });
-
-  $(".img").position({
-    "my": "center bottom",
-    "at": "center middle",
-    "of": $("#wrapper")
-  });
+  positioning();
 });
 
 </script>
-<script>
-$(document).ready(function(){
-  $("#mission").hide();
-  $("#footer").hide();
-  $(".learn").css("cursor", "pointer");
 
-  $(".learn").click(function(){
-    $("#mission").show();
-    $("#footer").show();
-    $("#banner").slideUp();
-
-  });
-
-});
-</script>
 @endsection
 @section('content')
 
@@ -176,9 +160,10 @@ $(document).ready(function(){
   <img class="img" id="a0" src="./img/dacrown-md-a.png" width ="100">
   <img class="img" id="a1" src="./img/icons8-Joystick.png" width ="100" style="opacity: 0;">
   <img class="img" id="a2" src="./img/icons8-Nintendo Without Card.png" width ="100" style="opacity: 0;">
+  <div id="container"></div>
+  </div>
 </div>
-<div id="container"></div>
-</div>
+
 
 @include('partials.mission')
 @include('partials.footer')
