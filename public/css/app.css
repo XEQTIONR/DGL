@@ -95,7 +95,6 @@ body .content {
   z-index: 3;
   margin: 0;
   background-color: #67c;
-  width: 100vw;
 }
 body .content h1 {
   color: white;
